@@ -1,0 +1,8 @@
+<h1> Student </h1>
+
+<% @student.each do |student| %>
+	<div>
+		<% byebug %>
+		<%= link_to student.to_s, student_path(student) %>
+	</div>
+<% end %>
